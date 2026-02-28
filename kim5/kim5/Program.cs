@@ -17,7 +17,7 @@ namespace kim5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTransaction_Info());
+            Application.Run(new frmHome());
         }
     }
 }
