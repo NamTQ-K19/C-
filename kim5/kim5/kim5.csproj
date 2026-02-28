@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BBE2476F-F023-462C-BE64-29C542A0FD94}</ProjectGuid>
+    <ProjectGuid>{284AA999-5F83-4A4E-8757-C9359F2BB7BF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>kim5</RootNamespace>
     <AssemblyName>kim5</AssemblyName>
@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connection\function.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +83,25 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Price_Info.resx">
       <DependentUpon>Price_Info.cs</DependentUpon>
+    <Compile Include="Forms\Security_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Security_Info.Designer.cs">
+      <DependentUpon>Security_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Transaction_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Transaction_Info.Designer.cs">
+      <DependentUpon>Transaction_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Security_Info.resx">
+      <DependentUpon>Security_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Transaction_Info.resx">
+      <DependentUpon>Transaction_Info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
